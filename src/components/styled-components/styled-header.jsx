@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const StyledHeader = styled.div`
 
     display: grid;
-    grid-template-columns: 1fr repeat(10, 2fr) 1fr;
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
     font-family: 'Gothic A1', sans-serif;
      
@@ -15,6 +15,9 @@ const StyledHeader = styled.div`
     align-items: center;
     justify-content: flex-end;
 
+    @media(max-width: 425px){
+      grid-column: 2/3;
+    }
     @media(min-width: 2000px){
       grid-column: 2/3;
     }
@@ -43,7 +46,7 @@ const StyledHeader = styled.div`
     display: inline-block;
 
     @media(min-width: 2000px){
-      font-size: 20pt;
+      font-size: 18pt;
     }
 
   }
@@ -63,12 +66,16 @@ const StyledHeader = styled.div`
   .job-name{
     font-weight: 400;
     font-size: 8pt;
-    letter-spacing: 1.8px;
+    letter-spacing: 2px;
     color: #9A9A9A;
-    margin-top: 4px;
+    margin-top: 10px;
 
+    @media(min-width: 768px){
+      margin-top: 14px;
+    }
     @media(min-width: 2000px){
-      font-size: 18pt;
+      font-size: 16pt;
+      margin-top: 26px;
     }
   }
   .end-section{
@@ -77,9 +84,13 @@ const StyledHeader = styled.div`
     align-items: center;
     justify-content: center;
     
+    @media(max-width: 425px){
+      grid-column: 11/12;
+    }
     @media(min-width: 2000px){
       grid-column: 11/12;
     }
+   
   }
   .lang-option{
     font-size: 10pt;
