@@ -30,7 +30,7 @@ const IndexPage = () => (
           <span className="color"> beautiful </span> 
           & 
           <span className="color"> functional </span>
-          websites
+          web apps
         </h1>
       </div>
       <Link className="link" to="/page-2/">My Work</Link>
