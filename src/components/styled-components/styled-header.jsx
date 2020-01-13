@@ -66,7 +66,7 @@ const StyledHeader = styled.div`
   .job-name{
     font-weight: 400;
     font-size: 8pt;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: #9A9A9A;
     margin-top: 10px;
 
