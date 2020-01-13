@@ -5,13 +5,15 @@ const StyledHeader = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
+    font-family: 'Gothic A1', sans-serif;
   
 
   .title {
-    font-family: 'Amaranth', sans-serif;
     font-size: 22px;
     letter-spacing: -1px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
   .name{
     text-decoration: none;
@@ -23,7 +25,6 @@ const StyledHeader = styled.div`
     text-align: center;
   }
   .status{
-    font-family: 'Silka-Medium', sans-serif;
     font-size: 13px;
     font-weight: bold;
     margin-bottom: 0;
@@ -39,26 +40,28 @@ const StyledHeader = styled.div`
   }
   .job-name{
     font-weight: 400;
-    font-family: 'Silka-Medium', sans-serif;
     font-size: 11px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.8px;
     color: #9A9A9A;
     margin-top: 4px;
   }
   .end-section{
-    grid-column: 11/12;
+    grid-column: 12;
     display: flex;
     align-items: center;
     justify-content: center;
 
   }
   .lang-option{
-    font-family: 'Silka-Medium', sans-serif;
     font-size: 14px;
     margin: 6px;
     text-decoration: none;
     color: black;
     font-weight: 700;
+
+    &:hover{
+      color: #A58861;
+    }
   }
 
   .nav-icon{
@@ -70,6 +73,8 @@ const StyledHeader = styled.div`
     cursor: pointer;
     z-index: 20;
     mix-blend-mode: difference;
+    display: none;
+
   }
   .hamburger-menu{
     width: 22px;
