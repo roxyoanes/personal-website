@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
       <div className="middle-section">
         <div className="dot"></div>
         <p className="status">Available for new projects</p>
-        <p className="job-name">FREELANCE DESIGNER</p>
+        <p className="job-name">FRONT-END DEVELOPER</p>
       </div>
       <div className="end-section">
         <div className="language">
