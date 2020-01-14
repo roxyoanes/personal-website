@@ -92,12 +92,19 @@ const StyledHeader = styled.div`
     }
    
   }
+  .language{
+    display: flex;
+    flex-direction: row;
+  }
   .lang-option{
     font-size: 10pt;
     margin: 6px;
     text-decoration: none;
     color: black;
     font-weight: 700;
+    border-color: transparent;
+    background-color: transparent;
+    margin: 0;
 
     &:hover{
       color: #A58861;

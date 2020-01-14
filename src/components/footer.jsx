@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="contact">
       <h3 className="title">Get In Touch</h3>
       <div className="form-wrapper">
-        <form className="contact__send-wrapper">
+        <form className="send-wrapper">
           <input type="text" className="form" id="name" placeholder="Your Name" />
           <input type="text" className="form" id="name" placeholder="Email Address" />
           <textarea type="text" className="form textarea" id="name" placeholder="Message" />
