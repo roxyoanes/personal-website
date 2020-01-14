@@ -40,13 +40,14 @@ const Layout = ({ children }) => {
       />
       <div css={css`
         height: 100vh;
-        min-height: 490px;
+        display: grid;
+        grid-template-columns: 0.1fr 5fr 0.1fr;
+        grid-template-rows: 0.2fr 1fr;
       `}>
       <Header siteTitle={data.site.siteMetadata.title} />
-     
-        <main css={css` height: 80%; display: flex `}>{children}</main>
+      {children}
       </div>
-       <Footer />
+      <Footer />
     </>
   )
 }
