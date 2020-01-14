@@ -4,26 +4,37 @@ import styled from "@emotion/styled";
 const StyledIndex = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  margin-top: 8%;
-  font-family: 'Gothic A1', sans-serif;
-   
+  margin: 8% 0;
+  align-items: baseline;
+  justify-content: center;
+  min-height: 460px;
+  width: 100%;
+  
+  @media(max-width: 1024px) {
+  align-items: center;
+  }
 
   .quote-container{
     grid-column: 3/11;
     text-align: center;
+    max-width: 800px;
+
+    @media(min-width: 1025px){
+      grid-column: 4/10;
+    }
   }
   .quote{
     font-size: 44pt;
     line-height: 72px;
 
-    @media(max-width: 768px) and (min-width: 426px){
+    @media(max-width: 1024px) and (min-width: 426px){
       font-size: 40pt;
-      line-height: 66px;
+      line-height: 56px;
     }
     @media(max-width: 425px){
       font-size: 26pt;
-      line-height: 46px;
+      line-height: 38px;
+      margin: 2% 0;
     }
   }
   .color{
@@ -54,10 +65,11 @@ const StyledIndex = styled.div`
     justify-content: center;
 
     @media(max-width: 425px){
-      grid-row: 3/4;
+      grid-row: 2/3;
       grid-column: 3/11;
       display: flex;
       flex-direction: row;
+      margin-top: 12px;
     }
     @media(min-width: 2000px){
       grid-column: 2/3;

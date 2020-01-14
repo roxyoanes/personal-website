@@ -1,12 +1,13 @@
 import styled from "@emotion/styled";
 
 const StyledHeader = styled.div`
-
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    font-family: 'Gothic A1', sans-serif;
-     
+    max-height: 20%;
+
+    @media(max-width: 768px) and (min-width: 426px){
+      margin: 0 12px;
+    }
 
   .title {
     font-size: 16pt;
