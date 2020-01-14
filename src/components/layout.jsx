@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Global, css } from '@emotion/core'
 
 import Header from "./header"
 import Footer from "./footer"
@@ -26,12 +27,26 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Global
+        styles={css`
+          body {
+            margin: 0;
+            font-family: 'Gothic A1', sans-serif;
+          }
+          html, body, #___gatsby, #gatsby-focus-wrapper {
+            height: 100%;
+          }
+        `}
+      />
+      <div css={css`
+        height: 100vh;
+        min-height: 490px;
+      `}>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-      >
-        <main>{children}</main>
-       <Footer />
+     
+        <main css={css` height: 80%; display: flex `}>{children}</main>
       </div>
+       <Footer />
     </>
   )
 }
