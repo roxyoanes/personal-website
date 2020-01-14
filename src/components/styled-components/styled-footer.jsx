@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 const StyledFooter = styled.div`
   display: grid;
@@ -7,7 +7,7 @@ const StyledFooter = styled.div`
   color: white;
   min-height: 100vh;
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     grid-template-columns: 0.25fr 1fr 0.25fr;
   }
 
@@ -25,7 +25,8 @@ const StyledFooter = styled.div`
     align-self: center;
   }
 
-  input, textarea {
+  input,
+  textarea {
     /* 30px for padding, 2px for border */
     width: calc(100% - 30px - 2px);
     display: block;
@@ -36,10 +37,11 @@ const StyledFooter = styled.div`
     margin: 8px 0;
     color: white;
 
-    &:hover{
-      border-color: #A58861;
+    &:hover {
+      border-color: #a58861;
       outline: 0;
-      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+        0 0 8px rgba(102, 175, 233, 0.6);
     }
   }
 
@@ -47,9 +49,10 @@ const StyledFooter = styled.div`
     height: 150px;
   }
 
-  input::placeholder, textarea::placeholder{
+  input::placeholder,
+  textarea::placeholder {
     color: white;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: "Gothic A1", sans-serif;
     font-size: 10pt;
   }
 
@@ -64,11 +67,11 @@ const StyledFooter = styled.div`
       padding: 6pt 22pt;
       cursor: pointer;
 
-      &:hover{
-        color: #A58861;
-        border-color: #A58861;
+      &:hover {
+        color: #a58861;
+        border-color: #a58861;
       }
     }
   }
-`;
-export default StyledFooter;
+`
+export default StyledFooter

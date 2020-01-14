@@ -123,7 +123,7 @@ const StyledHeader = styled.div`
     &:after {
       transform: rotate(0deg) translate(0px, 4px);
     }
-    
+
     &:before,
     &:after {
       content: "";

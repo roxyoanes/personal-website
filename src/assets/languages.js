@@ -9,7 +9,7 @@ const languages = {
       quote1: "I create",
       highlight1: "professional",
       highlight2: "responsive",
-      quote2: "web apps"
+      quote2: "web apps",
     },
     footer: {
       title: "Contact Details",
@@ -21,15 +21,15 @@ const languages = {
   },
   RO: {
     name: "RO",
-    header:{
+    header: {
       status: "Disponibilă pentru proiecte noi",
-      job_name: "FRONT-END DEVELOPER"
+      job_name: "FRONT-END DEVELOPER",
     },
     index: {
       quote1: "Creez web apps",
       highlight1: "profesionale",
       highlight2: "responsive",
-      quote2: ""
+      quote2: "",
     },
     footer: {
       title: "Detalii Contact",
@@ -41,4 +41,4 @@ const languages = {
   },
 }
 
-export default languages;
+export default languages

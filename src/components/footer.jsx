@@ -14,7 +14,7 @@ const Footer = () => {
   const sendForm = event => {
     event.preventDefault()
     const form = event.target
-    
+
     /* fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -46,7 +46,7 @@ const Footer = () => {
               {/* bot field */}
               <p hidden>
                 <label>
-                  Don't fill this out:{" "}
+                  Don&apos;t fill this out:{" "}
                   <input onChange={handleChange} name="bot-field" />
                 </label>
               </p>
