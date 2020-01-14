@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 
 const StyledIndex = styled.div`
+  grid-column-start: 2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: 8% 0;

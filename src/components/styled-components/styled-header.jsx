@@ -1,121 +1,101 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 const StyledHeader = styled.div`
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    max-height: 20%;
-
-    @media(max-width: 768px) and (min-width: 426px){
-      margin: 0 12px;
-    }
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+  margin-top: 12px;
 
   .title {
     font-size: 16pt;
     letter-spacing: -1px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    @media(max-width: 425px){
-      grid-column: 2/3;
-    }
-    @media(min-width: 2000px){
-      grid-column: 2/3;
-    }
+    margin: 0;
   }
-  .name{
+
+  .name {
     text-decoration: none;
     color: black;
-    grid-column: 2/6;
   }
-  .middle-section{
-    grid-column: 6/8;
+
+  .middle-section {
     text-align: center;
 
-    @media(max-width: 1024px) and (min-width: 426px){
-      grid-column: 5/9;
-    }
-    @media(max-width: 425px){
-      grid-column: 2/12;
-      grid-row: 2/3;
+    @media (max-width: 425px) {
+      margin-top: 32px;
     }
   }
-  .status{
+
+  .status {
     font-size: 9pt;
     font-weight: bold;
-    margin-bottom: 0;
     display: inline-block;
+    margin: 0;
 
-    @media(min-width: 2000px){
+    @media (min-width: 2000px) {
       font-size: 18pt;
     }
-
   }
-  .dot{
+
+  .dot {
     width: 8px;
     height: 8px;
-    border-radius: 4px;
-    background: #51A384;
+    border-radius: 50%;
+    background: #51a384;
     display: inline-block;
     margin-right: 4px;
 
-    @media(min-width: 2000px){
+    @media (min-width: 2000px) {
       width: 12px;
       height: 12px;
     }
   }
-  .job-name{
+
+  .job-name {
     font-weight: 400;
     font-size: 8pt;
     letter-spacing: 3px;
-    color: #9A9A9A;
-    margin-top: 10px;
+    color: #9a9a9a;
+    margin-top: 8px;
 
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
       margin-top: 14px;
     }
-    @media(min-width: 2000px){
+
+    @media (min-width: 2000px) {
       font-size: 16pt;
       margin-top: 26px;
     }
   }
-  .end-section{
-    grid-column: 12;
+
+  .end-section {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    @media(max-width: 425px){
-      grid-column: 11/12;
-    }
-    @media(min-width: 2000px){
-      grid-column: 11/12;
-    }
-   
+    justify-content: flex-end;
+    align-items: baseline;
   }
-  .language{
+
+  .language {
     display: flex;
     flex-direction: row;
   }
-  .lang-option{
+
+  .lang-option {
     font-size: 10pt;
-    margin: 6px;
     text-decoration: none;
     color: black;
     font-weight: 700;
     border-color: transparent;
     background-color: transparent;
     margin: 0;
-
-    &:hover{
-      color: #A58861;
+    &:hover {
+      color: #a58861;
     }
-    @media(min-width: 2000px){
+
+    @media (min-width: 2000px) {
       font-size: 14pt;
     }
   }
 
-  .nav-icon{
+  .nav-icon {
     position: fixed;
     right: 10px;
     top: 10px;
@@ -125,9 +105,9 @@ const StyledHeader = styled.div`
     z-index: 20;
     mix-blend-mode: difference;
     display: none;
-
   }
-  .hamburger-menu{
+
+  .hamburger-menu {
     width: 22px;
     height: 2px;
     position: absolute;
@@ -135,23 +115,23 @@ const StyledHeader = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     background: #ffffff00;
-    transition: all .25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 
-    &:before{
-      transform: rotate(0deg) translate(0px,-4px);
+    &:before {
+      transform: rotate(0deg) translate(0px, -4px);
     }
-    &:after{
-      transform: rotate(0deg) translate(0px,4px);
+    &:after {
+      transform: rotate(0deg) translate(0px, 4px);
     }
-    &:before, &:after{
-      content: '';
+    
+    &:before,
+    &:after {
+      content: "";
       position: absolute;
       width: 22px;
       height: 2px;
       background: black;
     }
   }
-`;
-
-
-export default StyledHeader;
+`
+export default StyledHeader
