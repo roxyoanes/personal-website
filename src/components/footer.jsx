@@ -15,7 +15,7 @@ const Footer = () => {
     event.preventDefault()
     const form = event.target
 
-    /* fetch("/", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
@@ -24,7 +24,7 @@ const Footer = () => {
       }),
     })
       .then(() => setIsSent(true))
-      .catch(error => console.log(error)) */
+      .catch(error => console.log(error))
   }
 
   return (
