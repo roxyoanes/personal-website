@@ -45,7 +45,12 @@ const Layout = ({ children }) => {
           height: 100vh;
           display: grid;
           grid-template-columns: 0.1fr 5fr 0.1fr;
-          grid-template-rows: 0.2fr 1fr;
+          grid-template-rows: 86px 1fr;
+          min-height: 560px;
+
+          @media (min-width: 2000px) {
+            grid-template-columns: 0.2fr 1fr 0.2fr;
+          }
         `}
       >
         <Header siteTitle={data.site.siteMetadata.title} />

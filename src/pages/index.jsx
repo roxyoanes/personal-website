@@ -54,9 +54,9 @@ const IndexPage = () => (
               {lang.index.quote2}
             </h1>
           </div>
-          <Link className="link" to="/page-2/">
+          {/* <Link className="link" to="/page-2/">
             My Work
-          </Link>
+          </Link> */}
         </StyledIndex>
       </Layout>
     )}
