@@ -56,6 +56,10 @@ const StyledFooter = styled.div`
     font-size: 10pt;
   }
 
+  .message {
+    text-align: center;
+  }
+
   .btn-wrapper {
     display: flex;
     justify-content: flex-end;

@@ -39,47 +39,54 @@ const Footer = () => {
         <StyledFooter>
           <div className="form-wrapper">
             <h3 className="title">{lang.footer.title}</h3>
-            <form
-              className="send-wrapper"
-              method="post"
-              name="contact-form"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              onSubmit={sendForm}
-            >
-              {/* the form name hidden field is required to support form submission without javascript */}
-              <input type="hidden" name="form-name" value="contact-form" />
-              {/* bot field */}
-              <p hidden>
-                <label>
-                  Don&apos;t fill this out:{" "}
-                  <input onChange={handleChange} name="bot-field" />
-                </label>
-              </p>
-              <input
-                type="text"
-                placeholder={lang.footer.placeholder1}
-                name="name"
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                placeholder={lang.footer.placeholder2}
-                name="email"
-                onChange={handleChange}
-              />
-              <textarea
-                type="text"
-                name="message"
-                placeholder={lang.footer.placeholder3}
-                onChange={handleChange}
-              />
-              <div className="btn-wrapper">
-                <button type="submit" className="send-btn">
-                  {lang.footer.button}
-                </button>
-              </div>
-            </form>
+            {isSent ? (
+              <h3 className="message">
+                Thank you for reaching out! I will get back to you as soon as
+                possible.
+              </h3>
+            ) : (
+              <form
+                className="send-wrapper"
+                method="post"
+                name="contact-form"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={sendForm}
+              >
+                {/* the form name hidden field is required to support form submission without javascript */}
+                <input type="hidden" name="form-name" value="contact-form" />
+                {/* bot field */}
+                <p hidden>
+                  <label>
+                    Don&apos;t fill this out:{" "}
+                    <input onChange={handleChange} name="bot-field" />
+                  </label>
+                </p>
+                <input
+                  type="text"
+                  placeholder={lang.footer.placeholder1}
+                  name="name"
+                  onChange={handleChange}
+                />
+                <input
+                  type="text"
+                  placeholder={lang.footer.placeholder2}
+                  name="email"
+                  onChange={handleChange}
+                />
+                <textarea
+                  type="text"
+                  name="message"
+                  placeholder={lang.footer.placeholder3}
+                  onChange={handleChange}
+                />
+                <div className="btn-wrapper">
+                  <button type="submit" className="send-btn">
+                    {lang.footer.button}
+                  </button>
+                </div>
+              </form>
+            )}
           </div>
         </StyledFooter>
       )}
