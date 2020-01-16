@@ -86,6 +86,8 @@ const StyledHeader = styled.div`
     border-color: transparent;
     background-color: transparent;
     margin: 0;
+    cursor: pointer;
+
     &:hover {
       color: #a58861;
     }
