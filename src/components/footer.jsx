@@ -3,6 +3,12 @@ import React from "react"
 import StyledFooter from "./styled-components/styled-footer"
 import { LanguageContext } from "../components/LanguageContext"
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 const Footer = () => {
   const [isSent, setIsSent] = React.useState(false)
   const [state, setState] = React.useState({})
